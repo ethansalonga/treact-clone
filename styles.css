@@ -33,6 +33,10 @@ li {
   display: flex;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 .purple {
   color: #6415ff;
 }
@@ -135,11 +139,11 @@ LANDING
 }
 
 .landing__right-container {
-  width: 60%;
+  width: 50%;
 }
 
 .landing__img {
-  max-width: 32rem;
+  width: 100%;
 }
 
 .input__container {
@@ -183,4 +187,23 @@ LANDING
 .landing__btn:hover {
   background-color: rgb(60, 13, 153);
   cursor: pointer;
+}
+
+.landing__customers {
+  margin-top: 5rem;
+}
+
+.landing__customers--title {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #a0aec0;
+}
+
+.landing__customers--logos {
+  margin-top: 1rem;
+  padding-right: 8rem;
+  width: 100%;
+  max-width: 100%;
+  opacity: 0.5;
 }
