@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treact Clone</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="row">
@@ -38,5 +39,33 @@
         </ul>
       </nav>
     </div>
+
+    <main>
+      <div class="container">
+        <section id="landing" class="row flex">
+          <div class="landing__left-container">
+            <div class="landing__title">
+              Beautiful React Templates <span class="purple">for you.</span>
+            </div>
+            <div class="landing__para">
+              Our templates are easy to setup, understand and customize. Fully
+              modular components with a variety of pages and components.
+            </div>
+            <div class="input__container">
+              <input
+                type="text"
+                class="landing__input"
+                placeholder="Your E-mail Address"
+              />
+              <button class="landing__btn">Get Started</button>
+            </div>
+            <div class="landing__customers"></div>
+          </div>
+          <figure class="landing__right-container flex">
+            <img src="./assets/landing.svg" class="landing__img" alt="" />
+          </figure>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
