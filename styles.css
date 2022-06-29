@@ -54,6 +54,7 @@ li {
   font-weight: 900;
   letter-spacing: 0.025em;
   color: #243e63;
+  margin-top: 1rem;
 }
 
 .section__para {
@@ -335,7 +336,6 @@ QUALITY WORK
 
 .quality__heading {
   text-align: left;
-  margin-top: 1rem;
 }
 
 .quality__para {
@@ -344,7 +344,7 @@ QUALITY WORK
 
 .quality__btn {
   margin-top: 2rem;
-  font-size: 00.875rem;
+  font-size: 0.875rem;
   display: inline-block;
   border-radius: 9999px;
   padding: 0.75rem 2rem;
@@ -434,4 +434,93 @@ STEPS
   font-size: 0.875rem;
   color: #718096;
   font-weight: 500;
+}
+
+/* 
+
+VALUES
+
+*/
+
+#values {
+  justify-content: space-between;
+}
+.values__description,
+.values__img--container {
+  width: 45%;
+}
+
+.values__cards {
+  display: flex;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem 0 0;
+}
+
+.value__title {
+  display: flex;
+}
+
+.value__title--icon {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  border-width: 0px;
+}
+
+.affordable {
+  background-color: rgb(154, 230, 180);
+}
+
+.professionalism {
+  background-color: rgb(254, 178, 178);
+}
+
+.value__title--text {
+  color: #243e63;
+  display: flex;
+  align-items: center;
+  margin-left: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.value__para {
+  text-align: left;
+  margin-top: 1rem;
+  color: #718096;
+  line-height: 1.625;
+}
+
+.values__img--container {
+  align-items: center;
+}
+
+.values__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.values__btn {
+  margin-top: 3rem;
+  font-size: 0.875rem;
+  display: inline-block;
+  border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  transition: all 300ms ease;
+  color: #f7fafc;
+  background-color: #6415ff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.values__btn:hover {
+  background-color: rgb(80, 17, 204);
 }
