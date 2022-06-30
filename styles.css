@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", system-ui;
+  border: 0 solid #e5e7eb;
 }
 
 body {
@@ -39,6 +40,10 @@ li {
 
 .purple {
   color: #6415ff;
+}
+
+.white {
+  color: #f7fafc;
 }
 
 .section__title {
@@ -389,8 +394,7 @@ STEPS
 }
 
 .steps__img {
-  border-radius: 0.25rem;
-  border-width: 1px;
+  border-width: 0;
   max-width: 100%;
   height: auto;
   display: block;
@@ -523,4 +527,230 @@ VALUES
 
 .values__btn:hover {
   background-color: rgb(80, 17, 204);
+}
+
+/* 
+
+PRICING
+
+*/
+
+.pricing__row {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.pricing__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing__title {
+  text-align: center;
+}
+
+.pricing__heading {
+  text-align: center;
+}
+
+.pricing__para {
+  text-align: center;
+  max-width: 36rem;
+}
+
+.pricing__plans {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing__plan,
+.pricing__plan--indigo {
+  position: relative;
+  margin-right: 2rem;
+  width: 100%;
+  max-width: 24rem;
+  margin-top: 4rem;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 0.5rem;
+  --tw-shadow: 0 1px 3px 0rgba (0, 0, 0, 0.1), 0 1px 2px 0rgba (0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  padding-top: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(26, 32, 44, var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing__plan--indigo {
+  background-image: linear-gradient(
+    135deg,
+    rgb(76, 81, 191) 0%,
+    rgb(102, 126, 234) 100%
+  );
+}
+
+.plan__top-gradient--green,
+.plan__top-gradient--red {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 0.5rem;
+}
+
+.plan__top-gradient--green {
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+}
+
+.plan__top-gradient--red {
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+}
+
+.plan__heading {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  line-height: 1.625;
+  padding: 2rem 0;
+}
+
+.plan__heading--title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.plan__heading--price {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.25rem 0;
+}
+
+.plan__heading--frequency {
+  color: rgb(160, 174, 192);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.plan__heading--frequency-white {
+  color: #f7fafc;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.plan__description,
+.plan__description--indigo {
+  display: flex;
+  flex-direction: column;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding: 2rem;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  flex: 1 1 0%;
+}
+
+.plan__description--indigo {
+  border-color: rgb(102, 126, 234);
+}
+
+.plan__description--title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.plan__description--para {
+  color: rgb(113, 128, 150);
+  margin-top: 1.25rem;
+  font-weight: 500;
+}
+
+.plan__description--para-white {
+  color: #f7fafc;
+  margin-top: 1.25rem;
+  font-weight: 500;
+}
+
+.plan__btn {
+  padding: 2rem 4rem;
+}
+
+.plan__btn--cta-green,
+.plan__btn--cta-indigo,
+.plan__btn--cta-red {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  font-size: 0.875rem;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  font-weight: 700;
+  color: rgb(247, 250, 252);
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.plan__btn--cta:hover {
+  --tw-translate-x: 1px;
+  --tw-translate-y: -1px;
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-bg-opacity: 1;
+  background-color: rgba(80, 17, 204, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(237, 242, 247, var(--tw-text-opacity));
+}
+
+.plan__btn--cta-green {
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+}
+
+.plan__btn--cta-indigo {
+  background-color: rgb(247, 250, 252);
+  color: rgb(100, 21, 255);
+}
+
+.plan__btn--cta-red {
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
 }
