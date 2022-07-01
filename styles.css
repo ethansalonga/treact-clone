@@ -883,3 +883,78 @@ TESTIMONIALS
   height: 24px;
   width: 1px;
 }
+
+/* 
+
+GET STARTED
+
+*/
+
+#get-started {
+  display: flex;
+  background-color: rgb(100, 21, 255);
+  border-radius: 0.5rem;
+  min-height: 282px;
+  margin-bottom: 6rem;
+}
+
+.get-started__row {
+  display: flex;
+  text-align: left;
+  padding: 0 2rem;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.get-started__heading {
+  width: 50%;
+  max-width: 32rem;
+  font-size: 1.875rem;
+  color: #f7fafc;
+  font-weight: 700;
+}
+
+.get-started__btns {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.get-started__btn {
+  color: rgb(247, 250, 252);
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(0 0 #0000), var(0 0 #0000), var(--tw-shadow);
+  padding: 1.25rem 2.5rem;
+  width: auto;
+  font-size: 1rem;
+  transition: all 300ms ease;
+  border-radius: 9999px;
+  font-weight: 700;
+  border-width: 1px;
+  border-color: transparent;
+  letter-spacing: 0.025rem;
+  cursor: pointer;
+}
+
+.get-started__btn--red {
+  background-color: rgb(245, 101, 101);
+  margin-right: 2rem;
+}
+
+.get-started__btn--red:hover {
+  background-color: rgba(229, 62, 62);
+}
+
+.get-started__btn--white {
+  color: rgba(247, 250, 252);
+  background-color: rgb(100, 21, 255);
+  border-color: rgba(160, 174, 192);
+}
+
+.get-started__btn--white:hover {
+  color: rgb(100, 21, 255);
+  background-color: rgb(247, 250, 252);
+}
