@@ -323,7 +323,7 @@ LANDING
 
 .landing__customers--title {
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 700;
   color: #a0aec0;
 }
@@ -1158,6 +1158,12 @@ footer {
   height: 1rem;
 }
 
+@media (max-width: 1280px) {
+  .landing__title {
+    font-size: 2.25rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .nav__links {
     display: none;
@@ -1165,5 +1171,55 @@ footer {
 
   .nav__burger {
     display: flex;
+  }
+
+  #landing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing__left-container {
+    position: relative;
+    text-align: center;
+    max-width: 32rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .landing__title {
+    font-size: 1.875rem;
+  }
+
+  .landing__para {
+    text-align: center;
+  }
+
+  .landing__input {
+    padding: 1.25rem 2rem 1.25rem 2rem;
+  }
+
+  .landing__btn {
+    position: relative;
+    margin: 1rem 0;
+    padding: 1.25rem 0;
+    width: 100%;
+  }
+
+  .landing__customers {
+    margin-top: 3rem;
+  }
+
+  .landing__customers--logos {
+    padding: 0;
+  }
+
+  .landing__right-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .landing__img {
+    margin-top: 2rem;
+    max-width: 32rem;
   }
 }
