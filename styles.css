@@ -1222,4 +1222,24 @@ footer {
     margin-top: 2rem;
     max-width: 32rem;
   }
+
+  .features__para {
+    font-size: 1rem;
+  }
+
+  .features__services {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .features__service {
+    width: 50%;
+    max-width: 24rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .features__service {
+    width: 100%;
+  }
 }
