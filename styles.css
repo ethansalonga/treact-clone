@@ -548,6 +548,12 @@ VALUES
   width: 45%;
 }
 
+.values__img--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .values__cards {
   display: flex;
 }
@@ -657,7 +663,6 @@ PRICING
 
 .pricing__plans {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .pricing__plan,
@@ -992,7 +997,7 @@ GET STARTED
   display: flex;
   background-color: rgb(100, 21, 255);
   border-radius: 0.5rem;
-  min-height: 282px;
+  padding: 6rem 0;
   margin-bottom: 6rem;
 }
 
@@ -1064,7 +1069,7 @@ FOOTER
 */
 
 footer {
-  padding: 6rem 0;
+  padding: 6rem 2rem;
   background-color: rgb(100, 21, 255);
   color: rgb(247, 250, 252);
   margin: 0 -2rem -2rem -2rem;
@@ -1248,6 +1253,32 @@ footer {
   .quality__img--container {
     align-items: center;
   }
+
+  .pricing__plans {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pricing__plan,
+  .pricing__plan--indigo {
+    margin-right: 0;
+  }
+
+  .get-started__row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .get-started__heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .get-started__btns {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1256,26 +1287,37 @@ footer {
   }
 
   #quality-work,
-  #steps {
+  #steps,
+  #values,
+  #testimonials {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
 
-  #steps {
+  #steps,
+  #testimonials {
     flex-direction: column;
   }
 
   .quality__img--container,
-  .steps__img--container {
+  .steps__img--container,
+  .values__img--container,
+  .testimonials__img--container {
     width: 100%;
     max-width: 28rem;
     justify-content: center;
     align-items: center;
   }
 
+  .testimonial__img {
+    max-width: none;
+  }
+
   .quality__description,
-  .steps__description {
+  .steps__description,
+  .values__description,
+  .testimonials__description {
     text-align: center;
     margin: 4rem auto;
     padding: 0;
@@ -1313,5 +1355,65 @@ footer {
   .step__title,
   .step__para {
     margin-top: 0.75rem;
+  }
+
+  .values__para,
+  .testimonials__para {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  .values__cards {
+    flex-direction: column;
+  }
+
+  .value__title {
+    justify-content: center;
+  }
+
+  .value__para {
+    text-align: center;
+  }
+
+  .value {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testimonials__description {
+    padding-left: 0;
+  }
+
+  .testimonial__stars {
+    justify-content: center;
+  }
+
+  .get-started__heading {
+    font-size: 1.5rem;
+  }
+
+  .get-started__btns {
+    flex-direction: column;
+  }
+
+  .get-started__btn--red {
+    font-size: 0.875rem;
+    padding: 0.75rem 1.5rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .get-started__btn--white {
+    font-size: 0.875rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .footer__info {
+    flex-direction: column;
+  }
+
+  .footer__info--copyright,
+  .footer__info--social-links {
+    margin-top: 2rem;
   }
 }
