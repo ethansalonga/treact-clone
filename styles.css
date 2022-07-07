@@ -1165,6 +1165,14 @@ footer {
 }
 
 @media (max-width: 1024px) {
+  .section__heading {
+    font-size: 2.25rem;
+  }
+
+  .section__para {
+    font-size: 1rem;
+  }
+
   .nav__links {
     display: none;
   }
@@ -1236,10 +1244,74 @@ footer {
     width: 50%;
     max-width: 24rem;
   }
+
+  .quality__img--container {
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
   .features__service {
     width: 100%;
+  }
+
+  #quality-work,
+  #steps {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #steps {
+    flex-direction: column;
+  }
+
+  .quality__img--container,
+  .steps__img--container {
+    width: 100%;
+    max-width: 28rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quality__description,
+  .steps__description {
+    text-align: center;
+    margin: 4rem auto;
+    padding: 0;
+    max-width: 28rem;
+    width: 100%;
+  }
+
+  .quality__title {
+    text-align: center;
+  }
+
+  .quality__heading {
+    text-align: center;
+  }
+
+  .quality__para {
+    text-align: center;
+  }
+
+  .step {
+    flex-direction: column;
+  }
+
+  .step__text {
+    margin: 0;
+  }
+
+  .step__number,
+  .step__title,
+  .step__para {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .step__title,
+  .step__para {
+    margin-top: 0.75rem;
   }
 }
